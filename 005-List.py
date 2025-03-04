@@ -1,3 +1,4 @@
+print("---------List--------")
 myList = ["Talha", 28, True, 28.2 ]
 
 print(myList)
@@ -21,3 +22,26 @@ if 28.2 in myList:
     print("yes")
 else:
     print("no")
+print("-----------------")
+
+nums = [1,2,3,5,56,6,6,5,4,8,223,0]
+print(sorted(nums))
+print("-----------------")
+
+del myList[2]
+print(myList)
+print("---------range--------")
+
+newList =list(range(2,30)) 
+"""
+1-baslagic verilmeden olur ama en son belli olmak zorunda
+2-bu bir function`dir
+3-sadece sayisal degerlerde uretir
+"""
+print(newList)
+
+product= ["urun1", "kagit", "zurna", "laptop"]
+print(sorted(product))
+#alfabetik siralar
+
+
