@@ -1,4 +1,5 @@
 print("---------List--------")
+#collection`dir
 myList = ["Talha", 28, True, 28.2 ]
 
 print(myList)
