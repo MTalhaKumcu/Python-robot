@@ -30,3 +30,17 @@ def defaultParametreAlanfunc(name = "Talha"):
 
 defaultParametreAlanfunc("Mehmet")
 defaultParametreAlanfunc()
+
+def sum(n1, n2):
+    print(n1+n2)
+
+sum(5,2)
+
+#pyhton developerlar functino isimlerini _ cizgi kullanarak verir
+def birden_cok_sayi_topla(*numbers): #* tuple`i gosterir
+    
+    flag = 0
+    for s in numbers:
+        flag += s
+    print(flag)
+birden_cok_sayi_topla(1,2,3,4,5,6,7,8,9,10)
