@@ -1,4 +1,4 @@
-list = ["a","b","c","d"]
+list = ["a","b","c","d","a"]
 
 for e in list:
     print(e)
@@ -11,3 +11,6 @@ print("============")
 
 for index , letter in enumerate(list):
     print(f"{index} : {letter}")
+
+list.sort()
+print(list)
