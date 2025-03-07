@@ -43,4 +43,5 @@ def birden_cok_sayi_topla(*numbers): #* tuple`i gosterir
     for s in numbers:
         flag += s
     print(flag)
-birden_cok_sayi_topla(1,2,3,4,5,6,7,8,9,10)
+birden_cok_sayi_topla(1,2.2,3,4,5,6,7,8,9,10)
+
