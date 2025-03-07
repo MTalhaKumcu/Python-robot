@@ -39,6 +39,7 @@ newList =list(range(2,30))
 1-baslagic verilmeden olur ama en son belli olmak zorunda
 2-bu bir function`dir
 3-sadece sayisal degerlerde uretir
+4-son sayi dahil degildir
 """
 print(newList)
 
