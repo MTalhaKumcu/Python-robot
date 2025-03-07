@@ -18,9 +18,17 @@ class Insan():
     def __str__(self):
         print(f"{self.name} {self.surname} {self.age}")
 
-
-insan = Insan("Talha", "Talhaa","10")
-insan.bilgileriyaz()        
-print("===str===")
-insan.__str__()
+    def __str__(self):
+        return f"{self.name} {self.surname} {self.age}"
     
+    def __len__(self):
+        return self.age
+    
+insan = Insan("Talha", "Talhaa",10)
+insan.bilgileriyaz() 
+
+print("===str===")
+print(str(insan))
+
+print("===len===")
+print(len(insan))
