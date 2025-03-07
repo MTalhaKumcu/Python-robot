@@ -1,5 +1,7 @@
 class Insan():
 
+    #__ cizgi ile basliyorsa ozel method`tur
+
     def __init__(self, name:str, surname:str, age:int):
         #bu satir constructer
         # :str ve int degiskenimin turu belli olsun diye yapildi
@@ -11,5 +13,14 @@ class Insan():
         #bir method`tan baska bir method`un bilgilerine erismek icin self mecburdur.
         #java`daki this`e benzer.
         print(f"kullanici adi & soyadi {self.name} {self.surname}. {self.age}") 
+
+    
+    def __str__(self):
+        print(f"{self.name} {self.surname} {self.age}")
+
+
 insan = Insan("Talha", "Talhaa","10")
 insan.bilgileriyaz()        
+print("===str===")
+insan.__str__()
+    
