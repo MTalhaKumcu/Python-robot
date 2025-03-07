@@ -37,7 +37,11 @@ def sum(n1, n2):
 sum(5,2)
 
 #pyhton developerlar functino isimlerini _ cizgi kullanarak verir
-def birden_cok_sayi_topla(*numbers): #* birden fazla variable almayi gosterir
+def birden_cok_sayi_topla(*numbers): 
+    """
+    * tuple gibi birden fazla variable almayi gosterir
+    ** alirsa dictionary gibi Key= value eslenigi alir
+    """
     
     flag = 0
     for s in numbers:
