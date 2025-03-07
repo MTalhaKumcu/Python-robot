@@ -14,3 +14,10 @@ for index , letter in enumerate(list):
 
 list.sort()
 print(list)
+
+print("======for-range====")
+      
+for i in range(0,10):
+    print(i)
+
+
