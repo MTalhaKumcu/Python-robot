@@ -1,2 +1,8 @@
 #ip install robotframework
 #python.exe -m pip install --upgrade pip
+
+robot dosya uzantilari .robottur 
+keyword mantigiyla calisir yani normal python dilinde ise function veya methoda karsi gelen kelimedir
+
+*** Settings *** 
+
