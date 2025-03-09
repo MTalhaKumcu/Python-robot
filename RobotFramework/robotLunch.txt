@@ -6,3 +6,7 @@ keyword mantigiyla calisir yani normal python dilinde ise function veya methoda 
 
 *** Settings *** 
 
+console uzerinden testleri calistirmak istedigimizde robot yazip calistirmak istedigimiz 
+testin relative path`ini alarak console "robot (path)" yaziyoruz
+
+ozel keywordler disindaki keywordler 1 tane variable alabilir

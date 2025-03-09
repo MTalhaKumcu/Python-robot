@@ -1,15 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-09T14:34:44.862955" rpa="false" schemaversion="5">
-<suite id="s1" name="001-Basics" source="c:\Users\mkumc\Desktop\Python-robot\RobotFramework\001-basics.robot">
-<test id="s1-t1" name="first test" line="2">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-09T16:12:51.119714" rpa="false" schemaversion="5">
+<suite id="s1" name="002-Varibales" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\002-Varibales.robot">
+<test id="s1-t1" name="first Test" line="17">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>this is my first message</arg>
+<arg>${name} Merhaba! ${age} yasindayim</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-09T14:34:44.903817" elapsed="0.000467"/>
+<status status="PASS" start="2025-03-09T16:12:51.154620" elapsed="0.000354"/>
 </kw>
-<status status="PASS" start="2025-03-09T14:34:44.902940" elapsed="0.002432"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-09T16:12:51.155322" level="INFO">${city} = Helsinki</msg>
+<var>${city}</var>
+<arg>Helsinki</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.155198" elapsed="0.000151"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${city}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.155495" elapsed="0.000279"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>------------------------</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.156028" elapsed="0.000351"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-09T16:12:51.156917" level="INFO">${sayi1} = 10</msg>
+<var>${sayi1}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.156713" elapsed="0.000232"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-09T16:12:51.157249" level="INFO">${sayi2} = 20</msg>
+<var>${sayi2}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.157148" elapsed="0.000124"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-09T16:12:51.157596" level="INFO">${toplam} = 30</msg>
+<var>${toplam}</var>
+<arg>${sayi1}+${sayi2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.157407" elapsed="0.000210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${toplam}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.157747" elapsed="0.000239"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-09T16:12:51.158281" level="INFO">${buyukharf} = BUNLAR BUYUK HARF</msg>
+<var>${buyukharf}</var>
+<arg>BUNLAR BUYUK HARF</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.158158" elapsed="0.000162"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2025-03-09T16:12:51.158792" level="INFO">${kucukharf} = bunlar buyuk harf</msg>
+<var>${kucukharf}</var>
+<arg>${buyukharf}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.158670" elapsed="0.000142"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${buyukharf} ve ${kucukharf}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-09T16:12:51.158944" elapsed="0.000285"/>
+</kw>
+<status status="PASS" start="2025-03-09T16:12:51.153917" elapsed="0.005510"/>
 </test>
-<status status="PASS" start="2025-03-09T14:34:44.880203" elapsed="0.027009"/>
+<status status="PASS" start="2025-03-09T16:12:51.121060" elapsed="0.039414"/>
 </suite>
 <statistics>
 <total>
@@ -18,7 +80,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="001-Basics" id="s1" pass="1" fail="0" skip="0">001-Basics</stat>
+<stat name="002-Varibales" id="s1" pass="1" fail="0" skip="0">002-Varibales</stat>
 </suite>
 </statistics>
 <errors>
