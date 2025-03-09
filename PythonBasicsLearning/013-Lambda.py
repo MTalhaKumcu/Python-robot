@@ -8,4 +8,4 @@ yukaridaki iki function aynidir
 """
 
 divide = lambda num : num / 2
-print(divide(11))
+print(divide(11)) 

@@ -23,3 +23,4 @@ print(type(myTuple))
 newListForTupleAppend = list(myTuple)
 newListForTupleAppend.append("yeni")
 print(newListForTupleAppend)
+ 

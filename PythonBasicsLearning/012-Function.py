@@ -40,7 +40,7 @@ sum(5,2)
 def birden_cok_sayi_topla(*numbers): 
     """
     * tuple gibi birden fazla variable almayi gosterir
-    ** alirsa dictionary gibi Key= value eslenigi alir
+    **  alirsa dictionary gibi Key= value eslenigi alir
     """
     
     flag = 0

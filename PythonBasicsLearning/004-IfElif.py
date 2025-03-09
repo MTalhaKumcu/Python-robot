@@ -24,6 +24,6 @@ sentence = "this is a sentence !"
 if "!" in sentence:
     print("yes , there is")
 else:
-    print("no , there is not")
+    print("no , there is not") 
 
 print("-----------------------------------")

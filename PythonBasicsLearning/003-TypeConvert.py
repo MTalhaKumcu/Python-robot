@@ -28,3 +28,4 @@ print("-------------------------------")
 
 print(f"\t again {name} \n my age {age}")
 #\ kacis ifadesidir
+ 

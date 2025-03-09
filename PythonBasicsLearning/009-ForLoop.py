@@ -23,4 +23,4 @@ for i in range(0,10):
 #end => yan yana gelmesi icin kullanilan bir parametredir
 print("======for-len====")
 for i in range(len(list)):
-    print(list[i])
+    print(list[i]) 

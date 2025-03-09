@@ -29,4 +29,4 @@ print(smth[-1])
 #n
 
 print(smth[::-1])
-#nohtyp gninrael ma i dlrow olleh
+#nohtyp gninrael ma i dlrow olleh 
