@@ -1,190 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:14:57.561607" rpa="false" schemaversion="5">
-<suite id="s1" name="006-Loops" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\006-loops.robot">
-<test id="s1-t1" name="Test01" line="13">
-<while condition="${sayi1} &lt;= ${sayi2}">
-<iter>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:28:15.734160" rpa="false" schemaversion="5">
+<suite id="s1" name="007-Keywords" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\007-keywords.robot">
+<test id="s1-t1" name="Test01" line="4">
+<kw name="Hello write on screen">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${sayi1}</arg>
+<arg>helloo</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.591637" elapsed="0.000270"/>
+<status status="PASS" start="2025-03-11T21:28:15.763604" elapsed="0.000267"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:14:57.592233" level="INFO">${sayi1} = 11</msg>
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.592037" elapsed="0.000224"/>
+<status status="PASS" start="2025-03-11T21:28:15.763224" elapsed="0.000744"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:14:57.591038" elapsed="0.001261"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.592491" elapsed="0.000192"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:14:57.592927" level="INFO">${sayi1} = 12</msg>
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.592769" elapsed="0.000183"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:14:57.592323" elapsed="0.000662"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.593166" elapsed="0.000354"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:14:57.593766" level="INFO">${sayi1} = 13</msg>
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.593608" elapsed="0.000203"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:14:57.593007" elapsed="0.000849"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.594058" elapsed="0.000189"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:14:57.594486" level="INFO">${sayi1} = 14</msg>
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.594332" elapsed="0.000178"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:14:57.593874" elapsed="0.000669"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.594721" elapsed="0.000222"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:14:57.595174" level="INFO">${sayi1} = 15</msg>
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.595024" elapsed="0.000176"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:14:57.594562" elapsed="0.000668"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sayi1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.595396" elapsed="0.000184"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:14:57.595805" level="INFO">${sayi1} = 16</msg>
-<var>${sayi1}</var>
-<arg>${sayi1}+1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.595661" elapsed="0.000165"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:14:57.595248" elapsed="0.000612"/>
-</iter>
-<status status="PASS" start="2025-03-11T21:14:57.591036" elapsed="0.004932"/>
-</while>
-<for flavor="IN">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.596310" elapsed="0.000182"/>
-</kw>
-<var name="${element}">deneme1</var>
-<status status="PASS" start="2025-03-11T21:14:57.596249" elapsed="0.000278"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.596673" elapsed="0.000178"/>
-</kw>
-<var name="${element}">1</var>
-<status status="PASS" start="2025-03-11T21:14:57.596613" elapsed="0.000272"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.597025" elapsed="0.000181"/>
-</kw>
-<var name="${element}">2</var>
-<status status="PASS" start="2025-03-11T21:14:57.596966" elapsed="0.000334"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.597575" elapsed="0.000431"/>
-</kw>
-<var name="${element}">3</var>
-<status status="PASS" start="2025-03-11T21:14:57.597481" elapsed="0.000580"/>
-</iter>
-<var>${element}</var>
-<value>@{myList}</value>
-<status status="PASS" start="2025-03-11T21:14:57.596123" elapsed="0.001972"/>
-</for>
-<for flavor="IN ENUMERATE">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${index}: ${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.598616" elapsed="0.000254"/>
-</kw>
-<var name="${index}">0</var>
-<var name="${element}">deneme1</var>
-<status status="PASS" start="2025-03-11T21:14:57.598546" elapsed="0.000361"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${index}: ${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.599066" elapsed="0.000261"/>
-</kw>
-<var name="${index}">1</var>
-<var name="${element}">1</var>
-<status status="PASS" start="2025-03-11T21:14:57.599004" elapsed="0.000389"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${index}: ${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.599635" elapsed="0.000406"/>
-</kw>
-<var name="${index}">2</var>
-<var name="${element}">2</var>
-<status status="PASS" start="2025-03-11T21:14:57.599539" elapsed="0.000540"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${index}: ${element}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:14:57.600329" elapsed="0.000306"/>
-</kw>
-<var name="${index}">3</var>
-<var name="${element}">3</var>
-<status status="PASS" start="2025-03-11T21:14:57.600255" elapsed="0.000427"/>
-</iter>
-<var>${index}</var>
-<var>${element}</var>
-<value>@{myList}</value>
-<status status="PASS" start="2025-03-11T21:14:57.598324" elapsed="0.002409"/>
-</for>
-<status status="PASS" start="2025-03-11T21:14:57.590667" elapsed="0.010404"/>
+<status status="PASS" start="2025-03-11T21:28:15.762668" elapsed="0.001534"/>
 </test>
-<status status="PASS" start="2025-03-11T21:14:57.562767" elapsed="0.039658"/>
+<status status="PASS" start="2025-03-11T21:28:15.735385" elapsed="0.029414"/>
 </suite>
 <statistics>
 <total>
@@ -193,7 +21,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="006-Loops" id="s1" pass="1" fail="0" skip="0">006-Loops</stat>
+<stat name="007-Keywords" id="s1" pass="1" fail="0" skip="0">007-Keywords</stat>
 </suite>
 </statistics>
 <errors>
