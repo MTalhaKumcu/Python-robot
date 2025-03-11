@@ -19,16 +19,20 @@ Test01
     Append To List    ${mylist}    ${sayi}
     sayilari bol    @{mylist}    
     Test icin ${browser} kullanildi
-    Log To Console     ${password}
-    Log To Console    ${email}
+    #Log To Console     ${password} txt de yaziyor 
+    #Log To Console    ${email} txt de yaziyor
 Test02
     Log To Console    bu test02`dir
 *** Keywords *** 
 sayilari bol
+    [Documentation]    bu keyword gelen sayilari ikiye boler
     [Arguments]    @{mylist}
     FOR    ${e}    IN    @{mylist}
         ${sonuc}=    Evaluate    ${e} / 2
         Log To Console    ${sonuc} 
     END
 Test icin ${browser} kullanildi
+    [Documentation]    bu keyword console`dan gelen
+    ...                browser adi ile testi calistirir.
+    ...                Args ${browser}=    browser adi
     Log To Console    ${browser} kullandin
