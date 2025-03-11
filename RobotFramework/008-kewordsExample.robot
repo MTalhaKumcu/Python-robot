@@ -1,4 +1,7 @@
 *** Settings ***
+
+Documentation    burayada istedigin sekilde bir TEST_DOCUMENTATION yazabilirsin
+
 Library    Collections
 #Test Setup =>her test`in basinda calisacak keyword
 #suite setup her suite`in basinda calisacak keyword

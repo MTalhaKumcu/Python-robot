@@ -23,5 +23,7 @@ robot -v "variableismi oldugu gibi":"tarayici" "Test Path" => hangi tarayicida i
 console`dan bosluklu bir deger gonderemeyiz ve yazilmis birdegerin uzerine yeni bir deger(en son yazilmis deger gibi gorur) overwrite edilebilir
     robot -v browser:chrome -v password:123123 -v email:a12312@gmai.com 008-kewordsExample.robot 
 
-!!!! bu isler icin dokumantasyon olusturmak farzdir
+!!!! bu isler icin dokumantasyon olusturmak farzdir. Bazi *** ile baslayan step definetion adimlarinda farklililar mevcuttur 
+incelersen gorursun
+
 
