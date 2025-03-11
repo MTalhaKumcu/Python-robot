@@ -1,99 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T22:36:51.872880" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T22:47:38.319989" rpa="false" schemaversion="5">
 <suite id="s1" name="008-kewordsExample" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\008-kewordsExample.robot">
-<test id="s1-t1" name="Test01" line="7">
+<test id="s1-t1" name="Test01" line="11">
 <kw name="sayilari bol">
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T22:36:51.906607" level="INFO">${sonuc} = 0.5</msg>
+<msg time="2025-03-11T22:47:38.350576" level="INFO">${sonuc} = 0.5</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.906382" elapsed="0.000263"/>
+<status status="PASS" start="2025-03-11T22:47:38.350360" elapsed="0.000249"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.906753" elapsed="0.000576"/>
+<status status="PASS" start="2025-03-11T22:47:38.350709" elapsed="0.000527"/>
 </kw>
 <var name="${e}">1</var>
-<status status="PASS" start="2025-03-11T22:36:51.906145" elapsed="0.001231"/>
+<status status="PASS" start="2025-03-11T22:47:38.350134" elapsed="0.001149"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T22:36:51.907708" level="INFO">${sonuc} = 1.0</msg>
+<msg time="2025-03-11T22:47:38.351662" level="INFO">${sonuc} = 1.0</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.907537" elapsed="0.000195"/>
+<status status="PASS" start="2025-03-11T22:47:38.351445" elapsed="0.000241"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.907813" elapsed="0.000366"/>
+<status status="PASS" start="2025-03-11T22:47:38.351764" elapsed="0.000400"/>
 </kw>
 <var name="${e}">2</var>
-<status status="PASS" start="2025-03-11T22:36:51.907466" elapsed="0.000752"/>
+<status status="PASS" start="2025-03-11T22:47:38.351376" elapsed="0.000826"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T22:36:51.908532" level="INFO">${sonuc} = 1.5</msg>
+<msg time="2025-03-11T22:47:38.352513" level="INFO">${sonuc} = 1.5</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.908371" elapsed="0.000184"/>
+<status status="PASS" start="2025-03-11T22:47:38.352355" elapsed="0.000180"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.908641" elapsed="0.000358"/>
+<status status="PASS" start="2025-03-11T22:47:38.352618" elapsed="0.000334"/>
 </kw>
 <var name="${e}">3</var>
-<status status="PASS" start="2025-03-11T22:36:51.908302" elapsed="0.000734"/>
+<status status="PASS" start="2025-03-11T22:47:38.352292" elapsed="0.000694"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T22:36:51.909455" level="INFO">${sonuc} = 2.0</msg>
+<msg time="2025-03-11T22:47:38.353326" level="INFO">${sonuc} = 2.0</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.909229" elapsed="0.000248"/>
+<status status="PASS" start="2025-03-11T22:47:38.353132" elapsed="0.000216"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.909553" elapsed="0.000379"/>
+<status status="PASS" start="2025-03-11T22:47:38.353428" elapsed="0.000307"/>
 </kw>
 <var name="${e}">4</var>
-<status status="PASS" start="2025-03-11T22:36:51.909120" elapsed="0.000850"/>
+<status status="PASS" start="2025-03-11T22:47:38.353069" elapsed="0.000753"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T22:36:51.910274" level="INFO">${sonuc} = 2.5</msg>
+<msg time="2025-03-11T22:47:38.354119" level="INFO">${sonuc} = 2.5</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.910116" elapsed="0.000180"/>
+<status status="PASS" start="2025-03-11T22:47:38.353968" elapsed="0.000174"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T22:36:51.910374" elapsed="0.000357"/>
+<status status="PASS" start="2025-03-11T22:47:38.354224" elapsed="0.000383"/>
 </kw>
 <var name="${e}">5</var>
-<status status="PASS" start="2025-03-11T22:36:51.910049" elapsed="0.000723"/>
+<status status="PASS" start="2025-03-11T22:47:38.353903" elapsed="0.000744"/>
 </iter>
 <var>${e}</var>
 <value>@{mylist}</value>
-<status status="PASS" start="2025-03-11T22:36:51.906014" elapsed="0.004786"/>
+<status status="PASS" start="2025-03-11T22:47:38.349996" elapsed="0.004679"/>
 </for>
 <arg>@{mylist}</arg>
-<status status="PASS" start="2025-03-11T22:36:51.905688" elapsed="0.005172"/>
+<status status="PASS" start="2025-03-11T22:47:38.349729" elapsed="0.005009"/>
 </kw>
-<status status="PASS" start="2025-03-11T22:36:51.905049" elapsed="0.006034"/>
+<kw name="Test icin ${browser} kullanildi" source_name="Test icin ${browser} kullanildi">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${browser} kullandin</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T22:47:38.355204" elapsed="0.000396"/>
+</kw>
+<status status="PASS" start="2025-03-11T22:47:38.354973" elapsed="0.000691"/>
+</kw>
+<status status="PASS" start="2025-03-11T22:47:38.349134" elapsed="0.006712"/>
 </test>
-<status status="PASS" start="2025-03-11T22:36:51.874040" elapsed="0.038058"/>
+<status status="PASS" start="2025-03-11T22:47:38.321127" elapsed="0.035552"/>
 </suite>
 <statistics>
 <total>
