@@ -16,6 +16,9 @@ Test01
     ${newisim}    ${newsehir}    iki deger donduren keyword
     Log To Console    ${newisim}
     Log To Console    ${newsehir}
+
+Test02    
+    Log To Console    baya mesaj var
 *** Keywords ***
 Hello write on screen
     Log To Console    helloo
@@ -42,4 +45,3 @@ iki deger donduren keyword
     ${newsehir}=    Set Variable    Ankara
     RETURN    ${newisim}    ${newsehir}
     #burada ne kadar parametre tanimladiysak test case icerisinde de o kadar tanimlamaliyiz
-    
