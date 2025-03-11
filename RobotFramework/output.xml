@@ -1,29 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T20:57:02.519252" rpa="false" schemaversion="5">
-<suite id="s1" name="005-Dictionary" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\005-Dictionary.robot">
-<test id="s1-t1" name="Test01" line="12">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:08:46.602326" rpa="false" schemaversion="5">
+<suite id="s1" name="006-Loops" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\006-loops.robot">
+<test id="s1-t1" name="Test01" line="13">
+<while condition="${sayi1} &lt;= ${sayi2}">
+<iter>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${newDict}</arg>
+<arg>${sayi1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T20:57:02.548252" elapsed="0.000503"/>
+<status status="PASS" start="2025-03-11T21:08:46.632832" elapsed="0.000255"/>
 </kw>
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-03-11T20:57:02.549330" level="INFO">&amp;{Dict} = { ame=talha2 | age=22312 | city=warsaw2 }</msg>
-<var>&amp;{Dict}</var>
-<arg>ame=talha2</arg>
-<arg>age=22312</arg>
-<arg>city=warsaw2</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-03-11T20:57:02.549092" elapsed="0.000267"/>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:08:46.633398" level="INFO">${sayi1} = 11</msg>
+<var>${sayi1}</var>
+<arg>${sayi1}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.633217" elapsed="0.000229"/>
 </kw>
+<status status="PASS" start="2025-03-11T21:08:46.632255" elapsed="0.001312"/>
+</iter>
+<iter>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${Dict}</arg>
+<arg>${sayi1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T20:57:02.549550" elapsed="0.000362"/>
+<status status="PASS" start="2025-03-11T21:08:46.633879" elapsed="0.000214"/>
 </kw>
-<status status="PASS" start="2025-03-11T20:57:02.547668" elapsed="0.002432"/>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:08:46.634526" level="INFO">${sayi1} = 12</msg>
+<var>${sayi1}</var>
+<arg>${sayi1}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.634182" elapsed="0.000370"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:08:46.633610" elapsed="0.000974"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sayi1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.634761" elapsed="0.000191"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:08:46.635198" level="INFO">${sayi1} = 13</msg>
+<var>${sayi1}</var>
+<arg>${sayi1}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.635038" elapsed="0.000182"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:08:46.634606" elapsed="0.000648"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sayi1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.635422" elapsed="0.000183"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:08:46.635842" level="INFO">${sayi1} = 14</msg>
+<var>${sayi1}</var>
+<arg>${sayi1}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.635693" elapsed="0.000175"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:08:46.635272" elapsed="0.000627"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sayi1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.636065" elapsed="0.000195"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:08:46.636494" level="INFO">${sayi1} = 15</msg>
+<var>${sayi1}</var>
+<arg>${sayi1}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.636344" elapsed="0.000178"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:08:46.635917" elapsed="0.000641"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sayi1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.636732" elapsed="0.000186"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:08:46.637153" level="INFO">${sayi1} = 16</msg>
+<var>${sayi1}</var>
+<arg>${sayi1}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:08:46.637002" elapsed="0.000173"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:08:46.636578" elapsed="0.000633"/>
+</iter>
+<status status="PASS" start="2025-03-11T21:08:46.632252" elapsed="0.005074"/>
+</while>
+<status status="PASS" start="2025-03-11T21:08:46.631962" elapsed="0.005548"/>
 </test>
-<status status="PASS" start="2025-03-11T20:57:02.520560" elapsed="0.030521"/>
+<status status="PASS" start="2025-03-11T21:08:46.603565" elapsed="0.034620"/>
 </suite>
 <statistics>
 <total>
@@ -32,7 +106,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="005-Dictionary" id="s1" pass="1" fail="0" skip="0">005-Dictionary</stat>
+<stat name="006-Loops" id="s1" pass="1" fail="0" skip="0">006-Loops</stat>
 </suite>
 </statistics>
 <errors>
