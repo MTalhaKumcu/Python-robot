@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:28:15.734160" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:48:23.360762" rpa="false" schemaversion="5">
 <suite id="s1" name="007-Keywords" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\007-keywords.robot">
-<test id="s1-t1" name="Test01" line="4">
+<test id="s1-t1" name="Test01" line="5">
 <kw name="Hello write on screen">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>helloo</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:28:15.763604" elapsed="0.000267"/>
+<status status="PASS" start="2025-03-11T21:48:23.389374" elapsed="0.000410"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:28:15.763224" elapsed="0.000744"/>
+<status status="PASS" start="2025-03-11T21:48:23.388992" elapsed="0.000897"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:28:15.762668" elapsed="0.001534"/>
+<kw name="Yeniden yaz">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${param}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:48:23.390291" elapsed="0.000415"/>
+</kw>
+<arg>parametre yazilmak zorunda anlamadiysan iiyice dusun anlarsin</arg>
+<status status="PASS" start="2025-03-11T21:48:23.390095" elapsed="0.000666"/>
+</kw>
+<kw name="Yeniden yaz">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${param}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:48:23.391143" elapsed="0.000535"/>
+</kw>
+<arg>${name} Naber?</arg>
+<status status="PASS" start="2025-03-11T21:48:23.390946" elapsed="0.000790"/>
+</kw>
+<kw name="Ekrana ${name} yaz" source_name="Ekrana ${yazi} yaz">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${yazi}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:48:23.392128" elapsed="0.000376"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:48:23.391921" elapsed="0.000634"/>
+</kw>
+<kw name="Sayilari topla">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T21:48:23.393117" level="INFO">${topla} = 30</msg>
+<var>${topla}</var>
+<arg>${sayi1} + ${sayi2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T21:48:23.392941" elapsed="0.000202"/>
+</kw>
+<return>
+<value>${topla}</value>
+<status status="PASS" start="2025-03-11T21:48:23.393185" elapsed="0.000036"/>
+</return>
+<msg time="2025-03-11T21:48:23.393323" level="INFO">${topla} = 30</msg>
+<var>${topla}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="PASS" start="2025-03-11T21:48:23.392757" elapsed="0.000588"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${topla}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:48:23.393514" elapsed="0.000409"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:48:23.388476" elapsed="0.005615"/>
 </test>
-<status status="PASS" start="2025-03-11T21:28:15.735385" elapsed="0.029414"/>
+<status status="PASS" start="2025-03-11T21:48:23.361955" elapsed="0.033199"/>
 </suite>
 <statistics>
 <total>
