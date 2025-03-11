@@ -1,103 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:56:25.699931" rpa="false" schemaversion="5">
-<suite id="s1" name="007-Keywords" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\007-keywords.robot">
-<test id="s1-t1" name="Test01" line="5">
-<kw name="Hello write on screen">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>helloo</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.729398" elapsed="0.000364"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:56:25.729012" elapsed="0.000844"/>
-</kw>
-<kw name="Yeniden yaz">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${param}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.730295" elapsed="0.000402"/>
-</kw>
-<arg>parametre yazilmak zorunda anlamadiysan iiyice dusun anlarsin</arg>
-<status status="PASS" start="2025-03-11T21:56:25.730087" elapsed="0.000667"/>
-</kw>
-<kw name="Yeniden yaz">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${param}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.731378" elapsed="0.000376"/>
-</kw>
-<arg>${name} Naber?</arg>
-<status status="PASS" start="2025-03-11T21:56:25.731001" elapsed="0.000806"/>
-</kw>
-<kw name="Ekrana ${name} yaz" source_name="Ekrana ${yazi} yaz">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${yazi}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.732238" elapsed="0.000373"/>
-</kw>
-<status status="PASS" start="2025-03-11T21:56:25.732014" elapsed="0.000646"/>
-</kw>
-<kw name="Sayilari topla">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T22:36:51.872880" rpa="false" schemaversion="5">
+<suite id="s1" name="008-kewordsExample" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\008-kewordsExample.robot">
+<test id="s1-t1" name="Test01" line="7">
+<kw name="sayilari bol">
+<for flavor="IN">
+<iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:56:25.733370" level="INFO">${topla} = 30</msg>
-<var>${topla}</var>
-<arg>${sayi1} + ${sayi2}</arg>
+<msg time="2025-03-11T22:36:51.906607" level="INFO">${sonuc} = 0.5</msg>
+<var>${sonuc}</var>
+<arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.733178" elapsed="0.000217"/>
-</kw>
-<return>
-<value>${topla}</value>
-<status status="PASS" start="2025-03-11T21:56:25.733439" elapsed="0.000037"/>
-</return>
-<msg time="2025-03-11T21:56:25.733647" level="INFO">${topla} = 30</msg>
-<var>${topla}</var>
-<arg>10</arg>
-<arg>20</arg>
-<status status="PASS" start="2025-03-11T21:56:25.732861" elapsed="0.000825"/>
+<status status="PASS" start="2025-03-11T22:36:51.906382" elapsed="0.000263"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${topla}</arg>
+<arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.733885" elapsed="0.000382"/>
+<status status="PASS" start="2025-03-11T22:36:51.906753" elapsed="0.000576"/>
 </kw>
-<kw name="iki deger donduren keyword">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-03-11T21:56:25.734791" level="INFO">${newisim} = talha3</msg>
-<var>${newisim}</var>
-<arg>talha3</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.734690" elapsed="0.000121"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-03-11T21:56:25.734968" level="INFO">${newsehir} = Ankara</msg>
-<var>${newsehir}</var>
-<arg>Ankara</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.734883" elapsed="0.000107"/>
-</kw>
-<return>
-<value>${newisim}</value>
-<value>${newsehir}</value>
-<status status="PASS" start="2025-03-11T21:56:25.735030" elapsed="0.000036"/>
-</return>
-<msg time="2025-03-11T21:56:25.735186" level="INFO">${newisim} = talha3</msg>
-<msg time="2025-03-11T21:56:25.735218" level="INFO">${newsehir} = Ankara</msg>
-<var>${newisim}</var>
-<var>${newsehir}</var>
-<status status="PASS" start="2025-03-11T21:56:25.734483" elapsed="0.000752"/>
+<var name="${e}">1</var>
+<status status="PASS" start="2025-03-11T22:36:51.906145" elapsed="0.001231"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T22:36:51.907708" level="INFO">${sonuc} = 1.0</msg>
+<var>${sonuc}</var>
+<arg>${e} / 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T22:36:51.907537" elapsed="0.000195"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${newisim}</arg>
+<arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.735389" elapsed="0.000380"/>
+<status status="PASS" start="2025-03-11T22:36:51.907813" elapsed="0.000366"/>
+</kw>
+<var name="${e}">2</var>
+<status status="PASS" start="2025-03-11T22:36:51.907466" elapsed="0.000752"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T22:36:51.908532" level="INFO">${sonuc} = 1.5</msg>
+<var>${sonuc}</var>
+<arg>${e} / 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T22:36:51.908371" elapsed="0.000184"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${newsehir}</arg>
+<arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:56:25.735926" elapsed="0.000366"/>
+<status status="PASS" start="2025-03-11T22:36:51.908641" elapsed="0.000358"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:56:25.728461" elapsed="0.008104"/>
+<var name="${e}">3</var>
+<status status="PASS" start="2025-03-11T22:36:51.908302" elapsed="0.000734"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T22:36:51.909455" level="INFO">${sonuc} = 2.0</msg>
+<var>${sonuc}</var>
+<arg>${e} / 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T22:36:51.909229" elapsed="0.000248"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sonuc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T22:36:51.909553" elapsed="0.000379"/>
+</kw>
+<var name="${e}">4</var>
+<status status="PASS" start="2025-03-11T22:36:51.909120" elapsed="0.000850"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-11T22:36:51.910274" level="INFO">${sonuc} = 2.5</msg>
+<var>${sonuc}</var>
+<arg>${e} / 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-11T22:36:51.910116" elapsed="0.000180"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sonuc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T22:36:51.910374" elapsed="0.000357"/>
+</kw>
+<var name="${e}">5</var>
+<status status="PASS" start="2025-03-11T22:36:51.910049" elapsed="0.000723"/>
+</iter>
+<var>${e}</var>
+<value>@{mylist}</value>
+<status status="PASS" start="2025-03-11T22:36:51.906014" elapsed="0.004786"/>
+</for>
+<arg>@{mylist}</arg>
+<status status="PASS" start="2025-03-11T22:36:51.905688" elapsed="0.005172"/>
+</kw>
+<status status="PASS" start="2025-03-11T22:36:51.905049" elapsed="0.006034"/>
 </test>
-<status status="PASS" start="2025-03-11T21:56:25.701163" elapsed="0.036293"/>
+<status status="PASS" start="2025-03-11T22:36:51.874040" elapsed="0.038058"/>
 </suite>
 <statistics>
 <total>
@@ -106,7 +102,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="007-Keywords" id="s1" pass="1" fail="0" skip="0">007-Keywords</stat>
+<stat name="008-kewordsExample" id="s1" pass="1" fail="0" skip="0">008-kewordsExample</stat>
 </suite>
 </statistics>
 <errors>
