@@ -12,11 +12,15 @@ Test Setup    Test icin ${firefox} kullanildi
 ${sayi}=    100
 ${browser}=    chrome
 ${firefox}=    firefox
+
+
 *** Test Cases ***
 Test01 
     Append To List    ${mylist}    ${sayi}
     sayilari bol    @{mylist}    
     Test icin ${browser} kullanildi
+    Log To Console     ${password}
+    Log To Console    ${email}
 Test02
     Log To Console    bu test02`dir
 *** Keywords *** 

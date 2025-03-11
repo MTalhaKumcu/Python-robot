@@ -14,3 +14,8 @@ ozel keywordler disindaki keywordler 1 tane variable alabilir
 pyenv onemlidir cunku python kullanirken bazen framework`ler veya kutuphaneler baska ihtiyaclar duyarlar.
 Bu durum birlerini etkilememesi icin python env. kullanilir. Buna sanal python denebilir.
 
+008.keywords`e bak
+robot -v "variableismi oldugu gibi":"tarayici" "Test Path" => hangi tarayicida istersem orada caliisir
+    devami olarak  => -v password:123123 -v Email=asdas@gmail.com gibi arka arkaya disaridan variable`lar verilebilir
+
+    robot -v browser:chrome -v password:123123 -v email:asd@gmai.com 008-kewordsExample.robot 
