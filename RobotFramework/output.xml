@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T20:43:23.826556" rpa="false" schemaversion="5">
+<suite id="s1" name="004-List" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\004-List.robot">
+<test id="s1-t1" name="Test01" line="14">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${myList}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.870341" elapsed="0.000459"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-03-11T20:43:23.871210" level="INFO">@{newList} = [ kamil | kamile | sabri | sabriye ]</msg>
+<var>@{newList}</var>
+<arg>kamil</arg>
+<arg>kamile</arg>
+<arg>sabri</arg>
+<arg>sabriye</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.871056" elapsed="0.000181"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${newList}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.871462" elapsed="0.000411"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${newList}</arg>
+<arg>asdsada</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.872091" elapsed="0.000119"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${newList}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.872423" elapsed="0.000397"/>
+</kw>
+<kw name="Remove Values From List" owner="Collections">
+<arg>${newList}</arg>
+<arg>asdsada</arg>
+<doc>Removes all occurrences of given ``values`` from ``list``.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.873031" elapsed="0.000113"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${newList}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T20:43:23.873359" elapsed="0.000387"/>
+</kw>
+<status status="PASS" start="2025-03-11T20:43:23.869548" elapsed="0.004505"/>
+</test>
+<status status="PASS" start="2025-03-11T20:43:23.827722" elapsed="0.047449"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="004-List" id="s1" pass="1" fail="0" skip="0">004-List</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
