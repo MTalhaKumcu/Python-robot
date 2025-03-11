@@ -2,7 +2,9 @@
 *** Variables ***
 ${name}=    deneme
 @{myList}=    deneme1    1    2    3
-&{myDictionary}=    deneme2=deneme2     deneme3=deneme3
+&{myDictionary}=    deneme2=deneme2     
+...    deneme3=deneme3    
+#yukaridaki ... bir satirin devamini gostermektedir bir cok yerde gorulmektedir
 ${sayi1}=    10
 ${sayi2}=    15
 
@@ -17,5 +19,13 @@ Test01
             
     END
 
-    
+    FOR    ${element}    IN    @{myList}
+        Log To Console    ${element}
+        
+    END
+
+    FOR    ${index}    ${element}    IN ENUMERATE    @{myList}
+        Log To Console   ${index}: ${element}
+        
+    END
 *** Keywords ***
