@@ -10,3 +10,7 @@ console uzerinden testleri calistirmak istedigimizde robot yazip calistirmak ist
 testin relative path`ini alarak console "robot (path)" yaziyoruz
 
 ozel keywordler disindaki keywordler 1 tane variable alabilir
+
+pyenv onemlidir cunku python kullanirken bazen framework`ler veya kutuphaneler baska ihtiyaclar duyarlar.
+Bu durum birlerini etkilememesi icin python env. kullanilir. Buna sanal python denebilir.
+
