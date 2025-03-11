@@ -1,171 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T23:05:49.576408" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T23:13:15.857526" rpa="false" schemaversion="5">
 <suite id="s1" name="008-kewordsExample" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\008-kewordsExample.robot">
 <kw name="Test icin chrome kullanildi" type="SETUP" source_name="Test icin ${browser} kullanildi">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${browser} kullandin</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.612219" elapsed="0.000417"/>
+<status status="PASS" start="2025-03-11T23:13:15.893529" elapsed="0.000327"/>
 </kw>
-<status status="PASS" start="2025-03-11T23:05:49.611825" elapsed="0.000896"/>
+<doc>bu keyword console`dan gelen
+browser adi ile testi calistirir.
+Args chrome=    browser adi</doc>
+<status status="PASS" start="2025-03-11T23:13:15.893142" elapsed="0.000813"/>
 </kw>
-<test id="s1-t1" name="Test01" line="18">
+<test id="s1-t1" name="Test01" line="21">
 <kw name="Test icin firefox kullanildi" type="SETUP" source_name="Test icin ${browser} kullanildi">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${browser} kullandin</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.613362" elapsed="0.000351"/>
+<status status="PASS" start="2025-03-11T23:13:15.894645" elapsed="0.000275"/>
 </kw>
-<status status="PASS" start="2025-03-11T23:05:49.613163" elapsed="0.000609"/>
+<doc>bu keyword console`dan gelen
+browser adi ile testi calistirir.
+Args chrome=    browser adi</doc>
+<status status="PASS" start="2025-03-11T23:13:15.894434" elapsed="0.000548"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${mylist}</arg>
 <arg>${sayi}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.613951" elapsed="0.000126"/>
+<status status="PASS" start="2025-03-11T23:13:15.895138" elapsed="0.000135"/>
 </kw>
 <kw name="sayilari bol">
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:05:49.614833" level="INFO">${sonuc} = 0.5</msg>
+<msg time="2025-03-11T23:13:15.896076" level="INFO">${sonuc} = 0.5</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.614663" elapsed="0.000197"/>
+<status status="PASS" start="2025-03-11T23:13:15.895899" elapsed="0.000204"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.614939" elapsed="0.000343"/>
+<status status="PASS" start="2025-03-11T23:13:15.896191" elapsed="0.000407"/>
 </kw>
 <var name="${e}">1</var>
-<status status="PASS" start="2025-03-11T23:05:49.614596" elapsed="0.000720"/>
+<status status="PASS" start="2025-03-11T23:13:15.895828" elapsed="0.000835"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:05:49.615635" level="INFO">${sonuc} = 1.0</msg>
+<msg time="2025-03-11T23:13:15.897347" level="INFO">${sonuc} = 1.0</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.615469" elapsed="0.000190"/>
+<status status="PASS" start="2025-03-11T23:13:15.897014" elapsed="0.000362"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.615816" elapsed="0.000546"/>
+<status status="PASS" start="2025-03-11T23:13:15.897464" elapsed="0.000297"/>
 </kw>
 <var name="${e}">2</var>
-<status status="PASS" start="2025-03-11T23:05:49.615402" elapsed="0.001025"/>
+<status status="PASS" start="2025-03-11T23:13:15.896858" elapsed="0.000939"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:05:49.616871" level="INFO">${sonuc} = 1.5</msg>
+<msg time="2025-03-11T23:13:15.898128" level="INFO">${sonuc} = 1.5</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.616627" elapsed="0.000268"/>
+<status status="PASS" start="2025-03-11T23:13:15.897957" elapsed="0.000194"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.616992" elapsed="0.000363"/>
+<status status="PASS" start="2025-03-11T23:13:15.898230" elapsed="0.000313"/>
 </kw>
 <var name="${e}">3</var>
-<status status="PASS" start="2025-03-11T23:05:49.616544" elapsed="0.000861"/>
+<status status="PASS" start="2025-03-11T23:13:15.897887" elapsed="0.000698"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:05:49.617846" level="INFO">${sonuc} = 2.0</msg>
+<msg time="2025-03-11T23:13:15.898924" level="INFO">${sonuc} = 2.0</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.617662" elapsed="0.000208"/>
+<status status="PASS" start="2025-03-11T23:13:15.898760" elapsed="0.000187"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.617957" elapsed="0.000334"/>
+<status status="PASS" start="2025-03-11T23:13:15.899036" elapsed="0.000258"/>
 </kw>
 <var name="${e}">4</var>
-<status status="PASS" start="2025-03-11T23:05:49.617534" elapsed="0.000832"/>
+<status status="PASS" start="2025-03-11T23:13:15.898683" elapsed="0.000646"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:05:49.618822" level="INFO">${sonuc} = 2.5</msg>
+<msg time="2025-03-11T23:13:15.899645" level="INFO">${sonuc} = 2.5</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.618640" elapsed="0.000209"/>
+<status status="PASS" start="2025-03-11T23:13:15.899483" elapsed="0.000190"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.618933" elapsed="0.000366"/>
+<status status="PASS" start="2025-03-11T23:13:15.899751" elapsed="0.000247"/>
 </kw>
 <var name="${e}">5</var>
-<status status="PASS" start="2025-03-11T23:05:49.618548" elapsed="0.000797"/>
+<status status="PASS" start="2025-03-11T23:13:15.899416" elapsed="0.000617"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:05:49.619747" level="INFO">${sonuc} = 50.0</msg>
+<msg time="2025-03-11T23:13:15.900338" level="INFO">${sonuc} = 50.0</msg>
 <var>${sonuc}</var>
 <arg>${e} / 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.619542" elapsed="0.000233"/>
+<status status="PASS" start="2025-03-11T23:13:15.900184" elapsed="0.000175"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${sonuc}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.619871" elapsed="0.000459"/>
+<status status="PASS" start="2025-03-11T23:13:15.900445" elapsed="0.000331"/>
 </kw>
 <var name="${e}">100</var>
-<status status="PASS" start="2025-03-11T23:05:49.619451" elapsed="0.000973"/>
+<status status="PASS" start="2025-03-11T23:13:15.900119" elapsed="0.000696"/>
 </iter>
 <var>${e}</var>
 <value>@{mylist}</value>
-<status status="PASS" start="2025-03-11T23:05:49.614481" elapsed="0.006010"/>
+<status status="PASS" start="2025-03-11T23:13:15.895697" elapsed="0.005147"/>
 </for>
 <arg>@{mylist}</arg>
-<status status="PASS" start="2025-03-11T23:05:49.614302" elapsed="0.006318"/>
+<doc>bu keyword gelen sayilari ikiye boler</doc>
+<status status="PASS" start="2025-03-11T23:13:15.895513" elapsed="0.005390"/>
 </kw>
 <kw name="Test icin ${browser} kullanildi" source_name="Test icin ${browser} kullanildi">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${browser} kullandin</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.621174" elapsed="0.000338"/>
+<status status="PASS" start="2025-03-11T23:13:15.901328" elapsed="0.000303"/>
 </kw>
-<status status="PASS" start="2025-03-11T23:05:49.620896" elapsed="0.000668"/>
+<doc>bu keyword console`dan gelen
+browser adi ile testi calistirir.
+Args chrome=    browser adi</doc>
+<status status="PASS" start="2025-03-11T23:13:15.901120" elapsed="0.000566"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${password}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.621723" elapsed="0.000365"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${email}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.622223" elapsed="0.000348"/>
-</kw>
-<status status="PASS" start="2025-03-11T23:05:49.612773" elapsed="0.010149"/>
+<status status="PASS" start="2025-03-11T23:13:15.894014" elapsed="0.007820"/>
 </test>
-<test id="s1-t2" name="Test02" line="24">
+<test id="s1-t2" name="Test02" line="27">
 <kw name="Test icin firefox kullanildi" type="SETUP" source_name="Test icin ${browser} kullanildi">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${browser} kullandin</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.624310" elapsed="0.000274"/>
+<status status="PASS" start="2025-03-11T23:13:15.903057" elapsed="0.000282"/>
 </kw>
-<status status="PASS" start="2025-03-11T23:05:49.624058" elapsed="0.000597"/>
+<doc>bu keyword console`dan gelen
+browser adi ile testi calistirir.
+Args chrome=    browser adi</doc>
+<status status="PASS" start="2025-03-11T23:13:15.902859" elapsed="0.000541"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>bu test02`dir</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:05:49.624887" elapsed="0.000252"/>
+<status status="PASS" start="2025-03-11T23:13:15.903595" elapsed="0.000272"/>
 </kw>
-<status status="PASS" start="2025-03-11T23:05:49.623679" elapsed="0.001710"/>
+<status status="PASS" start="2025-03-11T23:13:15.902515" elapsed="0.001510"/>
 </test>
-<status status="PASS" start="2025-03-11T23:05:49.577618" elapsed="0.048684"/>
+<doc>burayada istedigin sekilde bir TEST_DOCUMENTATION yazabilirsin</doc>
+<status status="PASS" start="2025-03-11T23:13:15.858745" elapsed="0.046101"/>
 </suite>
 <statistics>
 <total>

@@ -19,12 +19,14 @@ ${firefox}=    firefox
 
 *** Test Cases ***
 Test01 
+    [Documentation]    bu Test01 documentation`udur
     Append To List    ${mylist}    ${sayi}
     sayilari bol    @{mylist}    
     Test icin ${browser} kullanildi
     #Log To Console     ${password} txt de yaziyor 
     #Log To Console    ${email} txt de yaziyor
 Test02
+    [Documentation]    bu Test02 documentation`udur
     Log To Console    bu test02`dir
 *** Keywords *** 
 sayilari bol

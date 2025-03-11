@@ -26,4 +26,7 @@ console`dan bosluklu bir deger gonderemeyiz ve yazilmis birdegerin uzerine yeni 
 !!!! bu isler icin dokumantasyon olusturmak farzdir. Bazi *** ile baslayan step definetion adimlarinda farklililar mevcuttur 
 incelersen gorursun
 
+    report`un uzerine gelince ctrl(apple control) + sol click yapinca acilir. 
+    Ama genelde log kismi kullanilir.Log hata ayiklamayi kolaylastirir.
+
 
