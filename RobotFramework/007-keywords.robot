@@ -11,7 +11,11 @@ Test01
    
     ${topla}=    Sayilari topla    10   20
     Log To Console    ${topla}
+    
 
+    ${newisim}    ${newsehir}    iki deger donduren keyword
+    Log To Console    ${newisim}
+    Log To Console    ${newsehir}
 *** Keywords ***
 Hello write on screen
     Log To Console    helloo
@@ -26,6 +30,16 @@ Ekrana ${yazi} yaz
 
 
 Sayilari topla
+
     [Arguments]    ${sayi1}    ${sayi2}
     ${topla}=    Evaluate    ${sayi1} + ${sayi2}  
     RETURN     ${topla}
+
+
+
+iki deger donduren keyword
+    ${newisim}=    Set Variable    talha3
+    ${newsehir}=    Set Variable    Ankara
+    RETURN    ${newisim}    ${newsehir}
+    #burada ne kadar parametre tanimladiysak test case icerisinde de o kadar tanimlamaliyiz
+    

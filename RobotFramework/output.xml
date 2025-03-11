@@ -1,67 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:48:23.360762" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T21:56:25.699931" rpa="false" schemaversion="5">
 <suite id="s1" name="007-Keywords" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\007-keywords.robot">
 <test id="s1-t1" name="Test01" line="5">
 <kw name="Hello write on screen">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>helloo</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:48:23.389374" elapsed="0.000410"/>
+<status status="PASS" start="2025-03-11T21:56:25.729398" elapsed="0.000364"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:48:23.388992" elapsed="0.000897"/>
+<status status="PASS" start="2025-03-11T21:56:25.729012" elapsed="0.000844"/>
 </kw>
 <kw name="Yeniden yaz">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${param}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:48:23.390291" elapsed="0.000415"/>
+<status status="PASS" start="2025-03-11T21:56:25.730295" elapsed="0.000402"/>
 </kw>
 <arg>parametre yazilmak zorunda anlamadiysan iiyice dusun anlarsin</arg>
-<status status="PASS" start="2025-03-11T21:48:23.390095" elapsed="0.000666"/>
+<status status="PASS" start="2025-03-11T21:56:25.730087" elapsed="0.000667"/>
 </kw>
 <kw name="Yeniden yaz">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${param}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:48:23.391143" elapsed="0.000535"/>
+<status status="PASS" start="2025-03-11T21:56:25.731378" elapsed="0.000376"/>
 </kw>
 <arg>${name} Naber?</arg>
-<status status="PASS" start="2025-03-11T21:48:23.390946" elapsed="0.000790"/>
+<status status="PASS" start="2025-03-11T21:56:25.731001" elapsed="0.000806"/>
 </kw>
 <kw name="Ekrana ${name} yaz" source_name="Ekrana ${yazi} yaz">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${yazi}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:48:23.392128" elapsed="0.000376"/>
+<status status="PASS" start="2025-03-11T21:56:25.732238" elapsed="0.000373"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:48:23.391921" elapsed="0.000634"/>
+<status status="PASS" start="2025-03-11T21:56:25.732014" elapsed="0.000646"/>
 </kw>
 <kw name="Sayilari topla">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T21:48:23.393117" level="INFO">${topla} = 30</msg>
+<msg time="2025-03-11T21:56:25.733370" level="INFO">${topla} = 30</msg>
 <var>${topla}</var>
 <arg>${sayi1} + ${sayi2}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T21:48:23.392941" elapsed="0.000202"/>
+<status status="PASS" start="2025-03-11T21:56:25.733178" elapsed="0.000217"/>
 </kw>
 <return>
 <value>${topla}</value>
-<status status="PASS" start="2025-03-11T21:48:23.393185" elapsed="0.000036"/>
+<status status="PASS" start="2025-03-11T21:56:25.733439" elapsed="0.000037"/>
 </return>
-<msg time="2025-03-11T21:48:23.393323" level="INFO">${topla} = 30</msg>
+<msg time="2025-03-11T21:56:25.733647" level="INFO">${topla} = 30</msg>
 <var>${topla}</var>
 <arg>10</arg>
 <arg>20</arg>
-<status status="PASS" start="2025-03-11T21:48:23.392757" elapsed="0.000588"/>
+<status status="PASS" start="2025-03-11T21:56:25.732861" elapsed="0.000825"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${topla}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T21:48:23.393514" elapsed="0.000409"/>
+<status status="PASS" start="2025-03-11T21:56:25.733885" elapsed="0.000382"/>
 </kw>
-<status status="PASS" start="2025-03-11T21:48:23.388476" elapsed="0.005615"/>
+<kw name="iki deger donduren keyword">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-11T21:56:25.734791" level="INFO">${newisim} = talha3</msg>
+<var>${newisim}</var>
+<arg>talha3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-11T21:56:25.734690" elapsed="0.000121"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-11T21:56:25.734968" level="INFO">${newsehir} = Ankara</msg>
+<var>${newsehir}</var>
+<arg>Ankara</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-11T21:56:25.734883" elapsed="0.000107"/>
+</kw>
+<return>
+<value>${newisim}</value>
+<value>${newsehir}</value>
+<status status="PASS" start="2025-03-11T21:56:25.735030" elapsed="0.000036"/>
+</return>
+<msg time="2025-03-11T21:56:25.735186" level="INFO">${newisim} = talha3</msg>
+<msg time="2025-03-11T21:56:25.735218" level="INFO">${newsehir} = Ankara</msg>
+<var>${newisim}</var>
+<var>${newsehir}</var>
+<status status="PASS" start="2025-03-11T21:56:25.734483" elapsed="0.000752"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${newisim}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:56:25.735389" elapsed="0.000380"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${newsehir}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-11T21:56:25.735926" elapsed="0.000366"/>
+</kw>
+<status status="PASS" start="2025-03-11T21:56:25.728461" elapsed="0.008104"/>
 </test>
-<status status="PASS" start="2025-03-11T21:48:23.361955" elapsed="0.033199"/>
+<status status="PASS" start="2025-03-11T21:56:25.701163" elapsed="0.036293"/>
 </suite>
 <statistics>
 <total>
