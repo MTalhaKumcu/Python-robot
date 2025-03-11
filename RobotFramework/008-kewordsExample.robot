@@ -1,6 +1,10 @@
-Library    Collections
-Library    Collections
 *** Settings ***
+Library    Collections
+#Test Setup =>her test`in basinda calisacak keyword
+#suite setup her suite`in basinda calisacak keyword
+Suite Setup    Test icin ${browser} kullanildi
+
+
 *** Variables ***
 
 @{mylist}=    1    2    3    4    5
@@ -9,7 +13,7 @@ ${browser}=    chrome
 
 *** Test Cases ***
 Test01 
-
+    Append To List    ${mylist}    ${sayi}
     sayilari bol    @{mylist}    
     Test icin ${browser} kullanildi
 
