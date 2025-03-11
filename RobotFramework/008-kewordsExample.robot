@@ -3,6 +3,7 @@ Library    Collections
 #Test Setup =>her test`in basinda calisacak keyword
 #suite setup her suite`in basinda calisacak keyword
 Suite Setup    Test icin ${browser} kullanildi
+Test Setup    Test icin ${firefox} kullanildi
 
 
 *** Variables ***
@@ -10,13 +11,14 @@ Suite Setup    Test icin ${browser} kullanildi
 @{mylist}=    1    2    3    4    5
 ${sayi}=    100
 ${browser}=    chrome
-
+${firefox}=    firefox
 *** Test Cases ***
 Test01 
     Append To List    ${mylist}    ${sayi}
     sayilari bol    @{mylist}    
     Test icin ${browser} kullanildi
-
+Test02
+    Log To Console    bu test02`dir
 *** Keywords *** 
 sayilari bol
     [Arguments]    @{mylist}
