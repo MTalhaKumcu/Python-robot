@@ -3,6 +3,9 @@ Library    CustomLib.py
 #python dosyalarini cagirmak isin kullanilir
 Resource    010-reusablerKeywords.resource
 #robot frameworklerini cagirmak icin resource kullanilir
+Variables    Locators.py
+#python ile olusturudugum locators dosyasini variable ile cagiririm
+
 *** Variables ***
 
 
