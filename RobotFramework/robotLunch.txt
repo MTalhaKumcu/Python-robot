@@ -46,3 +46,8 @@ robot framework python`dan bir function cagirdiginda _ lerin hepsini bosluk olar
 gelen butun kelimeler buyuk harfle baslar.
 
 bir function`a deecorasyon tanimladiktan sonra keyword olarak kullanmak istedigimde kullanamam.
+
+
+eger sadece resuable keywords(method/function)`lardan olusturmak istiyorsam
+ olusturudugum dosaynin uzantisi ".resource" olmali
+ ".robot" ise test case`lerimizin yazildigi yerdir.
