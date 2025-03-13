@@ -40,4 +40,9 @@ Disari bir variable icerigini degistirerek testi calistirmak icin
 robot -v degiskenadi:degiskenindegiri dosyayoulu.path
 
 """
+009 ve custom lib bak
 
+robot framework python`dan bir function cagirdiginda _ lerin hepsini bosluk olarak kabul der ve sonrasinda 
+gelen butun kelimeler buyuk harfle baslar.
+
+bir function`a deecorasyon tanimladiktan sonra keyword olarak kullanmak istedigimde kullanamam.
