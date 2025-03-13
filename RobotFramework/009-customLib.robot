@@ -21,8 +21,9 @@ Test01
     yenikeyword    50    60
     #txt anlatiliyor
 
-
     merhabaYaz
+
+    Log To Console    ${uyelikbyn}
 
 *** Keywords ***
 

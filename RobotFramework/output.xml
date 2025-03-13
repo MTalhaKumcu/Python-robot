@@ -1,27 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T10:41:53.095172" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T11:03:46.954903" rpa="false" schemaversion="5">
 <suite id="s1" name="009-customLib" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\009-customLib.robot">
-<test id="s1-t1" name="Test01" line="7">
+<test id="s1-t1" name="Test01" line="15">
 <kw name="Toplama Islemi" owner="CustomLib">
-<msg time="2025-03-13T10:41:53.128492" level="INFO">${toplama} = 35</msg>
+<msg time="2025-03-13T11:03:46.990255" level="INFO">${toplama} = 35</msg>
 <var>${toplama}</var>
 <arg>15</arg>
 <arg>20</arg>
-<status status="PASS" start="2025-03-13T10:41:53.128312" elapsed="0.000220"/>
+<status status="PASS" start="2025-03-13T11:03:46.990074" elapsed="0.000216"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${toplama}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-13T10:41:53.128797" elapsed="0.000447"/>
+<status status="PASS" start="2025-03-13T11:03:46.990520" elapsed="0.000474"/>
 </kw>
 <kw name="yenikeyword" owner="CustomLib">
 <arg>50</arg>
 <arg>60</arg>
-<status status="PASS" start="2025-03-13T10:41:53.129485" elapsed="0.000373"/>
+<status status="PASS" start="2025-03-13T11:03:46.991203" elapsed="0.000349"/>
 </kw>
-<status status="PASS" start="2025-03-13T10:41:53.127662" elapsed="0.002461"/>
+<kw name="merhabaYaz" owner="010-reusablerKeywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>merhaba</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:03:46.992025" elapsed="0.000315"/>
+</kw>
+<status status="PASS" start="2025-03-13T11:03:46.991798" elapsed="0.000601"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${uyelikbyn}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:03:46.992569" elapsed="0.000241"/>
+</kw>
+<status status="PASS" start="2025-03-13T11:03:46.989442" elapsed="0.003517"/>
 </test>
-<status status="PASS" start="2025-03-13T10:41:53.096332" elapsed="0.035013"/>
+<status status="PASS" start="2025-03-13T11:03:46.956198" elapsed="0.037889"/>
 </suite>
 <statistics>
 <total>
