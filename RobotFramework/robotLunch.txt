@@ -51,3 +51,5 @@ bir function`a deecorasyon tanimladiktan sonra keyword olarak kullanmak istedigi
 eger sadece resuable keywords(method/function)`lardan olusturmak istiyorsam
  olusturudugum dosaynin uzantisi ".resource" olmali
  ".robot" ise test case`lerimizin yazildigi yerdir.
+
+pip install robotframework-seleniumlibrary => seleniumlibrary setup
