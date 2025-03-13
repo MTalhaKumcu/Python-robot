@@ -5,6 +5,8 @@ Resource    010-reusablerKeywords.resource
 #robot frameworklerini cagirmak icin resource kullanilir
 *** Variables ***
 
+
+
 *** Test Cases ***
 
 Test01
