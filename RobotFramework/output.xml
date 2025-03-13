@@ -1,184 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-11T23:13:15.857526" rpa="false" schemaversion="5">
-<suite id="s1" name="008-kewordsExample" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\008-kewordsExample.robot">
-<kw name="Test icin chrome kullanildi" type="SETUP" source_name="Test icin ${browser} kullanildi">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${browser} kullandin</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.893529" elapsed="0.000327"/>
-</kw>
-<doc>bu keyword console`dan gelen
-browser adi ile testi calistirir.
-Args chrome=    browser adi</doc>
-<status status="PASS" start="2025-03-11T23:13:15.893142" elapsed="0.000813"/>
-</kw>
-<test id="s1-t1" name="Test01" line="21">
-<kw name="Test icin firefox kullanildi" type="SETUP" source_name="Test icin ${browser} kullanildi">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${browser} kullandin</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.894645" elapsed="0.000275"/>
-</kw>
-<doc>bu keyword console`dan gelen
-browser adi ile testi calistirir.
-Args chrome=    browser adi</doc>
-<status status="PASS" start="2025-03-11T23:13:15.894434" elapsed="0.000548"/>
-</kw>
-<kw name="Append To List" owner="Collections">
-<arg>${mylist}</arg>
-<arg>${sayi}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.895138" elapsed="0.000135"/>
-</kw>
-<kw name="sayilari bol">
-<for flavor="IN">
-<iter>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:13:15.896076" level="INFO">${sonuc} = 0.5</msg>
-<var>${sonuc}</var>
-<arg>${e} / 2</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.895899" elapsed="0.000204"/>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T10:29:55.929545" rpa="false" schemaversion="5">
+<suite id="s1" name="009-customLib" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\009-customLib.robot">
+<test id="s1-t1" name="Test01" line="7">
+<kw name="Toplama Islemi" owner="CustomLib">
+<msg time="2025-03-13T10:29:55.960916" level="INFO">${toplama} = 35</msg>
+<var>${toplama}</var>
+<arg>15</arg>
+<arg>20</arg>
+<status status="PASS" start="2025-03-13T10:29:55.960733" elapsed="0.000220"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${sonuc}</arg>
+<arg>${toplama}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.896191" elapsed="0.000407"/>
+<status status="PASS" start="2025-03-13T10:29:55.961184" elapsed="0.000219"/>
 </kw>
-<var name="${e}">1</var>
-<status status="PASS" start="2025-03-11T23:13:15.895828" elapsed="0.000835"/>
-</iter>
-<iter>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:13:15.897347" level="INFO">${sonuc} = 1.0</msg>
-<var>${sonuc}</var>
-<arg>${e} / 2</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.897014" elapsed="0.000362"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sonuc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.897464" elapsed="0.000297"/>
-</kw>
-<var name="${e}">2</var>
-<status status="PASS" start="2025-03-11T23:13:15.896858" elapsed="0.000939"/>
-</iter>
-<iter>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:13:15.898128" level="INFO">${sonuc} = 1.5</msg>
-<var>${sonuc}</var>
-<arg>${e} / 2</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.897957" elapsed="0.000194"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sonuc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.898230" elapsed="0.000313"/>
-</kw>
-<var name="${e}">3</var>
-<status status="PASS" start="2025-03-11T23:13:15.897887" elapsed="0.000698"/>
-</iter>
-<iter>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:13:15.898924" level="INFO">${sonuc} = 2.0</msg>
-<var>${sonuc}</var>
-<arg>${e} / 2</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.898760" elapsed="0.000187"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sonuc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.899036" elapsed="0.000258"/>
-</kw>
-<var name="${e}">4</var>
-<status status="PASS" start="2025-03-11T23:13:15.898683" elapsed="0.000646"/>
-</iter>
-<iter>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:13:15.899645" level="INFO">${sonuc} = 2.5</msg>
-<var>${sonuc}</var>
-<arg>${e} / 2</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.899483" elapsed="0.000190"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sonuc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.899751" elapsed="0.000247"/>
-</kw>
-<var name="${e}">5</var>
-<status status="PASS" start="2025-03-11T23:13:15.899416" elapsed="0.000617"/>
-</iter>
-<iter>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-11T23:13:15.900338" level="INFO">${sonuc} = 50.0</msg>
-<var>${sonuc}</var>
-<arg>${e} / 2</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.900184" elapsed="0.000175"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${sonuc}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.900445" elapsed="0.000331"/>
-</kw>
-<var name="${e}">100</var>
-<status status="PASS" start="2025-03-11T23:13:15.900119" elapsed="0.000696"/>
-</iter>
-<var>${e}</var>
-<value>@{mylist}</value>
-<status status="PASS" start="2025-03-11T23:13:15.895697" elapsed="0.005147"/>
-</for>
-<arg>@{mylist}</arg>
-<doc>bu keyword gelen sayilari ikiye boler</doc>
-<status status="PASS" start="2025-03-11T23:13:15.895513" elapsed="0.005390"/>
-</kw>
-<kw name="Test icin ${browser} kullanildi" source_name="Test icin ${browser} kullanildi">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${browser} kullandin</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.901328" elapsed="0.000303"/>
-</kw>
-<doc>bu keyword console`dan gelen
-browser adi ile testi calistirir.
-Args chrome=    browser adi</doc>
-<status status="PASS" start="2025-03-11T23:13:15.901120" elapsed="0.000566"/>
-</kw>
-<status status="PASS" start="2025-03-11T23:13:15.894014" elapsed="0.007820"/>
+<status status="PASS" start="2025-03-13T10:29:55.960100" elapsed="0.001496"/>
 </test>
-<test id="s1-t2" name="Test02" line="27">
-<kw name="Test icin firefox kullanildi" type="SETUP" source_name="Test icin ${browser} kullanildi">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${browser} kullandin</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.903057" elapsed="0.000282"/>
-</kw>
-<doc>bu keyword console`dan gelen
-browser adi ile testi calistirir.
-Args chrome=    browser adi</doc>
-<status status="PASS" start="2025-03-11T23:13:15.902859" elapsed="0.000541"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>bu test02`dir</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-11T23:13:15.903595" elapsed="0.000272"/>
-</kw>
-<status status="PASS" start="2025-03-11T23:13:15.902515" elapsed="0.001510"/>
-</test>
-<doc>burayada istedigin sekilde bir TEST_DOCUMENTATION yazabilirsin</doc>
-<status status="PASS" start="2025-03-11T23:13:15.858745" elapsed="0.046101"/>
+<status status="PASS" start="2025-03-13T10:29:55.930699" elapsed="0.031785"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="008-kewordsExample" id="s1" pass="2" fail="0" skip="0">008-kewordsExample</stat>
+<stat name="009-customLib" id="s1" pass="1" fail="0" skip="0">009-customLib</stat>
 </suite>
 </statistics>
 <errors>

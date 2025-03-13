@@ -29,4 +29,15 @@ incelersen gorursun
     report`un uzerine gelince ctrl(apple control) + sol click yapinca acilir. 
     Ama genelde log kismi kullanilir.Log hata ayiklamayi kolaylastirir.
 
+"""
+
+komut satiti ile robot framework testi calistirmak icin 
+robot dosyayolu.robot
+
+Disari bir variable icerigini degistirerek testi calistirmak icin
+-v Degisken adi:degiskenindegeri
+
+robot -v degiskenadi:degiskenindegiri dosyayoulu.path
+
+"""
 
