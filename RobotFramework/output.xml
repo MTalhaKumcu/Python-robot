@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T11:03:46.954903" rpa="false" schemaversion="5">
-<suite id="s1" name="009-customLib" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\009-customLib.robot">
-<test id="s1-t1" name="Test01" line="15">
-<kw name="Toplama Islemi" owner="CustomLib">
-<msg time="2025-03-13T11:03:46.990255" level="INFO">${toplama} = 35</msg>
-<var>${toplama}</var>
-<arg>15</arg>
-<arg>20</arg>
-<status status="PASS" start="2025-03-13T11:03:46.990074" elapsed="0.000216"/>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T11:12:18.785245" rpa="false" schemaversion="5">
+<suite id="s1" name="Deneme" source="C:\Users\mkumc\Desktop\Python-robot\RobotFramework\deneme.robot">
+<test id="s1-t1" name="test" line="4">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-13T11:12:19.044548" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com chrom'.</msg>
+<msg time="2025-03-13T11:12:29.312709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-13T11:12:29.313049" level="FAIL">InvalidArgumentException: Message: Malformed URL: URL constructor: https://www.google.com chrom is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:392:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:1054:11
+</msg>
+<arg>https://www.google.com chrom</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-03-13T11:12:19.044358" elapsed="10.274202">InvalidArgumentException: Message: Malformed URL: URL constructor: https://www.google.com chrom is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:392:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:1054:11
+</status>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${toplama}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-13T11:03:46.990520" elapsed="0.000474"/>
-</kw>
-<kw name="yenikeyword" owner="CustomLib">
-<arg>50</arg>
-<arg>60</arg>
-<status status="PASS" start="2025-03-13T11:03:46.991203" elapsed="0.000349"/>
-</kw>
-<kw name="merhabaYaz" owner="010-reusablerKeywords">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>merhaba</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-13T11:03:46.992025" elapsed="0.000315"/>
-</kw>
-<status status="PASS" start="2025-03-13T11:03:46.991798" elapsed="0.000601"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${uyelikbyn}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-03-13T11:03:46.992569" elapsed="0.000241"/>
-</kw>
-<status status="PASS" start="2025-03-13T11:03:46.989442" elapsed="0.003517"/>
+<status status="FAIL" start="2025-03-13T11:12:19.043510" elapsed="10.276576">InvalidArgumentException: Message: Malformed URL: URL constructor: https://www.google.com chrom is not a valid URL.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:197:5
+InvalidArgumentError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:392:5
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.sys.mjs:1054:11
+</status>
 </test>
-<status status="PASS" start="2025-03-13T11:03:46.956198" elapsed="0.037889"/>
+<status status="FAIL" start="2025-03-13T11:12:18.786385" elapsed="10.536904"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="009-customLib" id="s1" pass="1" fail="0" skip="0">009-customLib</stat>
+<stat name="Deneme" id="s1" pass="0" fail="1" skip="0">Deneme</stat>
 </suite>
 </statistics>
 <errors>

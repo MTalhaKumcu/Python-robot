@@ -53,3 +53,5 @@ eger sadece resuable keywords(method/function)`lardan olusturmak istiyorsam
  ".robot" ise test case`lerimizin yazildigi yerdir.
 
 pip install robotframework-seleniumlibrary => seleniumlibrary setup.
+pip install webdrivermanager => web driver manager
+pip install webdriver-manager
