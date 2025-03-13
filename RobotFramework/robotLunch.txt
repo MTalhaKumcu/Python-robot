@@ -52,4 +52,4 @@ eger sadece resuable keywords(method/function)`lardan olusturmak istiyorsam
  olusturudugum dosaynin uzantisi ".resource" olmali
  ".robot" ise test case`lerimizin yazildigi yerdir.
 
-pip install robotframework-seleniumlibrary => seleniumlibrary setup
+pip install robotframework-seleniumlibrary => seleniumlibrary setup.
