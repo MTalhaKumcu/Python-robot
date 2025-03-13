@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T11:24:06.504624" rpa="false" schemaversion="5">
+<suite id="s1" name="Test01" source="C:\Users\mkumc\Desktop\Python-robot\Selenium\tests\test01.robot">
+<test id="s1-t1" name="ilkTest" line="4">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-13T11:24:06.762275" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-13T11:24:06.762057" elapsed="2.079537"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T11:24:09.842657" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T11:24:08.842131" elapsed="1.000775"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-13T11:24:09.844339" level="INFO">Clicking button 'Accept All'.</msg>
+<msg time="2025-03-13T11:24:09.991084" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-13T11:24:09.991242" level="FAIL">Button with locator 'Accept All' not found.</msg>
+<arg>Accept All</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-13T11:24:09.843635" elapsed="0.149895">Button with locator 'Accept All' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-13T11:24:09.993963" elapsed="0.000045"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-13T11:24:09.994256" elapsed="0.000033"/>
+</kw>
+<status status="FAIL" start="2025-03-13T11:24:06.761046" elapsed="3.233529">Button with locator 'Accept All' not found.</status>
+</test>
+<status status="FAIL" start="2025-03-13T11:24:06.505809" elapsed="3.490387"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test01" id="s1" pass="0" fail="1" skip="0">Test01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
