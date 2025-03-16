@@ -1,68 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-16T15:58:20.639139" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-16T16:07:25.380932" rpa="false" schemaversion="5">
 <suite id="s1" name="Test01" source="C:\Users\mkumc\Desktop\Python-robot\Selenium\tests\test01.robot">
 <test id="s1-t1" name="ilkTest" line="4">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-16T15:58:20.962835" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<msg time="2025-03-16T16:07:25.631822" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
 <arg>https://www.google.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-16T15:58:20.962610" elapsed="2.027901"/>
+<status status="PASS" start="2025-03-16T16:07:25.631636" elapsed="2.133681"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-16T15:58:23.991779" level="INFO">Slept 1 second.</msg>
+<msg time="2025-03-16T16:07:28.766989" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-16T15:58:22.990922" elapsed="1.001246"/>
+<status status="PASS" start="2025-03-16T16:07:27.766069" elapsed="1.001355"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-03-16T15:58:23.994353" level="INFO">Clicking button 'Zaakceptuj wszystko'.</msg>
+<msg time="2025-03-16T16:07:28.769825" level="INFO">Clicking button 'Zaakceptuj wszystko'.</msg>
 <arg>Zaakceptuj wszystko</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-16T15:58:23.993245" elapsed="0.129190"/>
+<status status="PASS" start="2025-03-16T16:07:28.768656" elapsed="0.101256"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-16T15:58:27.123261" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-16T16:07:31.870806" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-16T15:58:24.122752" elapsed="3.000843"/>
+<status status="PASS" start="2025-03-16T16:07:28.870178" elapsed="3.000738"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-16T15:58:27.125797" level="INFO">Typing text 'facebook' into text field 'xpath=//textarea[@id="APjFqb"]'.</msg>
+<msg time="2025-03-16T16:07:31.871568" level="INFO">Typing text 'facebook' into text field 'xpath=//textarea[@id="APjFqb"]'.</msg>
 <arg>xpath=//textarea[@id="APjFqb"]</arg>
 <arg>facebook</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-16T15:58:27.124821" elapsed="0.112813"/>
+<status status="PASS" start="2025-03-16T16:07:31.871291" elapsed="0.101820"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-16T15:58:27.238278" level="INFO">Typing text 'facebook' into text field 'APjFqb'.</msg>
+<msg time="2025-03-16T16:07:31.973741" level="INFO">Typing text 'robot framework' into text field 'APjFqb'.</msg>
 <arg>APjFqb</arg>
-<arg>facebook</arg>
+<arg>robot framework</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-16T15:58:27.238040" elapsed="0.098940"/>
+<status status="PASS" start="2025-03-16T16:07:31.973501" elapsed="0.092027"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-16T15:58:30.338229" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-16T16:07:35.066484" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-16T15:58:27.337337" elapsed="3.001077"/>
+<status status="PASS" start="2025-03-16T16:07:32.065885" elapsed="3.000928"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-03-16T16:07:35.069336" level="INFO">Sending key(s) ('RETURN',) to APjFqb element.</msg>
+<msg time="2025-03-16T16:07:35.373485" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-03-16T16:07:35.373562" level="INFO">Releasing special key RETURN.</msg>
+<arg>APjFqb</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-03-16T16:07:35.067961" elapsed="0.317475"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-16T16:07:38.386184" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-16T16:07:35.385736" elapsed="3.000687"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-16T16:07:38.491191" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-16T16:07:38.491412" level="FAIL">Element with locator 'id=result-stats' not found.</msg>
+<var>${sonucTXT}</var>
+<arg>id=result-stats</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-03-16T16:07:38.387103" elapsed="0.107053">Element with locator 'id=result-stats' not found.</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${sonucTXT}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-16T16:07:38.494491" elapsed="0.000053"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-16T15:58:30.339126" elapsed="2.151379"/>
+<status status="NOT RUN" start="2025-03-16T16:07:38.494810" elapsed="0.000032"/>
 </kw>
-<status status="PASS" start="2025-03-16T15:58:20.961694" elapsed="11.529841"/>
+<status status="FAIL" start="2025-03-16T16:07:25.630834" elapsed="12.864232">Element with locator 'id=result-stats' not found.</status>
 </test>
-<status status="PASS" start="2025-03-16T15:58:20.640290" elapsed="11.853543"/>
+<status status="FAIL" start="2025-03-16T16:07:25.382136" elapsed="13.113863"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test01" id="s1" pass="1" fail="0" skip="0">Test01</stat>
+<stat name="Test01" id="s1" pass="0" fail="1" skip="0">Test01</stat>
 </suite>
 </statistics>
 <errors>
