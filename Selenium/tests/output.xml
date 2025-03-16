@@ -1,49 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-13T11:24:06.504624" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-16T15:58:20.639139" rpa="false" schemaversion="5">
 <suite id="s1" name="Test01" source="C:\Users\mkumc\Desktop\Python-robot\Selenium\tests\test01.robot">
 <test id="s1-t1" name="ilkTest" line="4">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-13T11:24:06.762275" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<msg time="2025-03-16T15:58:20.962835" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
 <arg>https://www.google.com</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-13T11:24:06.762057" elapsed="2.079537"/>
+<status status="PASS" start="2025-03-16T15:58:20.962610" elapsed="2.027901"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-13T11:24:09.842657" level="INFO">Slept 1 second.</msg>
+<msg time="2025-03-16T15:58:23.991779" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-13T11:24:08.842131" elapsed="1.000775"/>
+<status status="PASS" start="2025-03-16T15:58:22.990922" elapsed="1.001246"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-03-13T11:24:09.844339" level="INFO">Clicking button 'Accept All'.</msg>
-<msg time="2025-03-13T11:24:09.991084" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-03-13T11:24:09.991242" level="FAIL">Button with locator 'Accept All' not found.</msg>
-<arg>Accept All</arg>
+<msg time="2025-03-16T15:58:23.994353" level="INFO">Clicking button 'Zaakceptuj wszystko'.</msg>
+<arg>Zaakceptuj wszystko</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="FAIL" start="2025-03-13T11:24:09.843635" elapsed="0.149895">Button with locator 'Accept All' not found.</status>
+<status status="PASS" start="2025-03-16T15:58:23.993245" elapsed="0.129190"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>1</arg>
+<msg time="2025-03-16T15:58:27.123261" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-03-13T11:24:09.993963" elapsed="0.000045"/>
+<status status="PASS" start="2025-03-16T15:58:24.122752" elapsed="3.000843"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-16T15:58:27.125797" level="INFO">Typing text 'facebook' into text field 'xpath=//textarea[@id="APjFqb"]'.</msg>
+<arg>xpath=//textarea[@id="APjFqb"]</arg>
+<arg>facebook</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-16T15:58:27.124821" elapsed="0.112813"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-16T15:58:27.238278" level="INFO">Typing text 'facebook' into text field 'APjFqb'.</msg>
+<arg>APjFqb</arg>
+<arg>facebook</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-16T15:58:27.238040" elapsed="0.098940"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-16T15:58:30.338229" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-16T15:58:27.337337" elapsed="3.001077"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-03-13T11:24:09.994256" elapsed="0.000033"/>
+<status status="PASS" start="2025-03-16T15:58:30.339126" elapsed="2.151379"/>
 </kw>
-<status status="FAIL" start="2025-03-13T11:24:06.761046" elapsed="3.233529">Button with locator 'Accept All' not found.</status>
+<status status="PASS" start="2025-03-16T15:58:20.961694" elapsed="11.529841"/>
 </test>
-<status status="FAIL" start="2025-03-13T11:24:06.505809" elapsed="3.490387"/>
+<status status="PASS" start="2025-03-16T15:58:20.640290" elapsed="11.853543"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test01" id="s1" pass="0" fail="1" skip="0">Test01</stat>
+<stat name="Test01" id="s1" pass="1" fail="0" skip="0">Test01</stat>
 </suite>
 </statistics>
 <errors>
